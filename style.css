@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.grocery-form h3 {
+    margin: 15px 0px;
+    font-weight:lighter;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    
+}
+.section-center {
+    width: 60%;
+    min-height: 200px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:-8px -8px 15px rgba(255, 255,255, 0.1), 5px 5px 15px rgba(0,0,0,0.2) ; 
+}
+
+.alert-danger {
+    color: rgb(233, 21, 21);
+}
+
+.alert-success{
+    color: rgb(38, 104, 38);
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control input {
+width:80%;
+height: 40px;
+padding: 12px; 
+color: #111111;
+font-weight: 500;
+font-size: 15px;
+border-radius: 5px;
+border: 2px solid orange;
+
+}
+
+.form-control button {
+position: relative;
+float: right;
+font-weight: 500;
+font-size: 15px;
+color: black;
+width: 20%;
+height: 40px;
+border-radius: 5px;
+margin-left: 5px;
+cursor: pointer;
+border: 1px solid orange;
+}
+
+.form-control button:hover {
+    opacity: 0.5;
+} 
+
+.grocery-form {
+    text-align: center;
+}
+
+.grocery-container {
+    text-align: center;
+    /* margin: 10px; */
+    visibility: hidden; 
+    width: 100%;
+    /* background-color: aqua; */
+    /* padding: 10px 10px; */
+    margin-top: 10px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+}
+
+.show-container {
+visibility:visible;
+}
+
+.grocery-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid orange;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.clear-btn {
+font-weight: lighter;
+font-size: 15px;
+color: black;
+width: 100%;
+height: 30px;
+border-radius: 5px;
+margin-top: 5px;
+cursor: pointer;
+letter-spacing: 1.5px;
+border: 1px solid orange;
+}
+
+.clear-btn:hover {
+    opacity: 0.5;
+} 
+
+.btn-container>.delete-btn {
+    cursor: pointer;
+    color: rgba(167, 8, 8, 0.918);
+    border: none;
+}
+
+.btn-container .edit-btn {
+    cursor: pointer;
+    color: rgb(38, 104, 38);
+    border: none;
+}
+
+
+@media screen and (max-width: 425px) {
+    .section-center {
+        width: 90%;
+    }
+}
+
